@@ -1,0 +1,55 @@
+:root{
+  --green-dark: #004d26;
+  --green: #00b050;
+  --white: #ffffff;
+  --bg-light: #f8fdf8;
+  --muted: #6c757d;
+}
+
+/* Basic reset */
+*{box-sizing: border-box;}
+
+body.light-mode {
+  background: var(--bg-light);
+  color: #1f2937;
+  transition: background .3s ease, color .3s ease;
+}
+
+body.dark-mode {
+  background: #121212;
+  color: #e6eef0;
+}
+
+/* Navbar brand */
+.navbar-brand { font-weight:700; color: var(--white) !important; }
+
+/* Buttons */
+.btn-success { background-color: var(--green) !important; border-color: var(--green) !important; }
+.btn-outline-success { color: var(--green); border-color: var(--green); }
+
+/* Cards and shadows */
+.card { border-radius: 12px; }
+
+/* Hero */
+header h1 { color: var(--green-dark); }
+header p.lead { color: var(--muted); }
+
+/* Media cards iframe fallback */
+.card .ratio iframe { border: none; width:100%; height:100%; }
+
+/* Footer */
+footer { color:#fff; }
+
+/* Dark mode adjustments */
+body.dark-mode header h1 { color: #cdebd9; }
+body.dark-mode .card { background: #1b1b1b; color: #ddd; }
+body.dark-mode .btn-outline-success { color: var(--green); border-color: rgba(0,176,80,0.25); }
+body.dark-mode .navbar { background-color: #0d2b1a !important; }
+
+/* Small utilities */
+.lead { font-size: 1.05rem; }
+
+/* Responsive tweaks */
+@media (max-width: 768px){
+  header h1 { font-size: 1.6rem; }
+}
