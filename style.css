@@ -20,6 +20,29 @@ body.dark-mode {
   color: #e6eef0;
 }
 
+/* Default (light mode) */
+.section-theme {
+  background-color: #ffffff;
+  color: #212529;
+}
+
+/* Saat dark mode aktif */
+body.dark-mode .section-theme {
+  background-color: #1e1e1e; /* atau rgba(20,20,20,0.95) untuk lebih lembut */
+  color: #f8f9fa;
+}
+
+/* Link di dark mode */
+body.dark-mode .section-theme a {
+  color: #9be2a8; /* hijau muda */
+  border-color: #9be2a8;
+}
+
+body.dark-mode .section-theme a:hover {
+  background-color: #9be2a8;
+  color: #1e1e1e;
+}
+
 /* Navbar brand */
 .navbar-brand { font-weight:700; color: var(--white) !important; }
 
@@ -39,6 +62,15 @@ header p.lead { color: var(--muted); }
 
 /* Footer */
 footer { color:#fff; }
+
+/* Default (light mode) */
+.section-theme {
+  background-color: #ffffff;
+  color: #212529;
+}
+
+
+
 
 /* Dark mode adjustments */
 body.dark-mode header h1 { color: #cdebd9; }
