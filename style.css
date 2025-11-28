@@ -57,6 +57,14 @@ body.dark-mode .section-theme a:hover {
 header h1 { color: var(--green-dark); }
 header p.lead { color: var(--muted); }
 
+.hero-logo {
+    max-width: 320px;     /* ukuran maksimal gambar */
+    width: 100%;          /* responsive */
+    height: auto;         /* proporsional */
+    display: block;
+    margin: auto;
+}
+
 /* Media cards iframe fallback */
 .card .ratio iframe { border: none; width:100%; height:100%; }
 
